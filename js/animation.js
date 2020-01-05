@@ -1,0 +1,1 @@
+function myMove(){var e=document.getElementById("animate"),t=0,l=setInterval(function(){350==t?(e.style.backgroundColor="lime",clearInterval(l)):(t++,e.style.backgroundColor="red",e.style.top=t+"px",e.style.left=t+"px")},5)}
