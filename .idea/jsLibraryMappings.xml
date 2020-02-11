@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/animation.html" libraries="{jquery-ui}" />
     <file url="file://$PROJECT_DIR$/index.html" libraries="{jquery-ui}" />
     <file url="PROJECT" libraries="{059fa98d93, animate, font-awesome, jquery, jquery-3.3.1}" />
   </component>
