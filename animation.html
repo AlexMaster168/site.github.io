@@ -1,7 +1,107 @@
-﻿<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Анимация</title><meta name="viewport" content="width=device-width"><link rel="icon" href="https://cdn6.aptoide.com/imgs/8/a/7/8a73177e83e9561d14221e4fcdb4cc4d_icon.png?w=240"><link rel="stylesheet" href="css/animation-style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"><script src="js/animation.js"></script><script src="https://code.jquery.com/jquery-3.1.1.js"></script><script>$(window).scroll(function() {
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анимация</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://cdn6.aptoide.com/imgs/8/a/7/8a73177e83e9561d14221e4fcdb4cc4d_icon.png?w=240">
+    <link rel="stylesheet" href="Css/Animation-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <script src="Js/animation.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(window).scroll(function() {
             if ($(this).scrollTop()) {
                 $('.btn-top').fadeIn();
             } else {
                 $('.btn-top').fadeOut();
             }
-        });</script></head><body><div class="a"></div><div class="d"></div><div class="c"></div><div class="container"><div class="bar"></div></div><div id="animate-container"><p><button id="myMove-button" onclick="myMove()">Нажми</button></p><div id="container"><div id="animate"></div></div></div><div class="container-ice"><div class="icecream"><div class="flavor"><div class="flavours"></div></div><div class="stick"></div></div></div><div class="loading-window"><div class="car"><div class="strike"></div><div class="strike strike2"></div><div class="strike strike3"></div><div class="strike strike4"></div><div class="strike strike5"></div><div class="car-detail spoiler"></div><div class="car-detail back"></div><div class="car-detail center"></div><div class="car-detail center1"></div><div class="car-detail front"></div><div class="car-detail wheel"></div><div class="car-detail wheel wheel2"></div></div><div class="text"><span>Loading</span><span class="dots">...</span></div></div><div class="envelope"><input class="envelope__check" type="checkbox"><div class="envelope__flap envelope__flap--inside"></div><div class="envelope__flap"></div><div class="envelope__letter"><div class="letter"><div class="letter__content"><p>Здравствуйте👋</p><p>Дорогой посетитель сайта оцените, пожалуйста, сайт 😕</p></div><div class="letter__content"></div><div class="letter__content"><p>Пусть каждый знает об этом сайте, с меня кофе ☕️</p><span class="sign-off">AlexMaster</span></div></div></div><div class="envelope__back"></div></div><div class="social-network"><a href="#"><i class="fa fa-youtube fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-vk fa-2x"></i></a></div><div class="social-network m"><a href="#"><i class="fa fa-home fa-2x"></i></a> <a href="#"><i class="fa fa-android fa-2x"></i></a> <a href="#"><i class="fa fa-phone fa-2x"></i></a> <a href="#"><i class="fa fa-bars fa-2x"></i></a></div><div class="social-network h"><a href="#"><i class="fa fa-bug fa-2x"></i></a> <a href="#"><i class="fa fa-ban fa-2x"></i></a> <a href="#"><i class="fa fa-fire fa-2x"></i></a> <a href="#"><i class="fa fa-search fa-2x"></i></a></div><div class="social-network m"><a href="#"><i class="fa fa-save fa-2x"></i></a> <a href="#"><i class="fa fa-desktop fa-2x"></i></a> <a href="#"><i class="fa fa-comments-o fa-2x"></i></a> <a href="#"><i class="fa fa-angle-double-up fa-2x"></i></a></div><a class="top" href="#" title="На вверх"><button class="btn-top" title="Go to Top">Наверх</button></a></body></html>
+        });
+    </script>
+    </head>
+    <body>
+    <div class="a"></div><div class="d">
+    </div><div class="c"></div>
+    <div class="container">
+        <div class="bar"></div>
+    </div>
+    <div id="animate-container">
+        <p><button id="myMove-button" onclick="myMove()">Нажми</button></p>
+        <div id ="container">
+            <div id ="animate"></div>
+        </div>
+    </div>
+    <div class="container-ice">
+        <div class="icecream">
+            <div class="flavor">
+                <div class="flavours"></div>
+            </div>
+            <div class="stick"></div>
+        </div>
+    </div>
+    <div class="loading-window">
+    <div class="car">
+        <div class="strike"></div>
+        <div class="strike strike2"></div>
+        <div class="strike strike3"></div>
+        <div class="strike strike4"></div>
+        <div class="strike strike5"></div>
+        <div class="car-detail spoiler"></div>
+        <div class="car-detail back"></div>
+        <div class="car-detail center"></div>
+        <div class="car-detail center1"></div>
+        <div class="car-detail front"></div>
+        <div class="car-detail wheel"></div>
+        <div class="car-detail wheel wheel2"></div>
+    </div>
+    <div class="text">
+        <span>Loading</span><span class="dots">...</span>
+    </div>
+    </div>
+    <div class="envelope">
+        <input class="envelope__check" type="checkbox" />
+        <div class="envelope__flap envelope__flap--inside"></div>
+        <div class="envelope__flap"></div>
+        <div class="envelope__letter">
+            <div class="letter">
+                <div class="letter__content">
+                    <p>Здравствуйте👋</p>
+                    <p>Дорогой посетитель сайта оцените, пожалуйста, сайт 😕</p>
+                </div>
+                <div class="letter__content"></div>
+                <div class="letter__content">
+                    <p>Пусть каждый знает об этом сайте </p><span class="sign-off">AlexMaster</span>
+                </div>
+            </div>
+        </div>
+        <div class="envelope__back"></div>
+    </div>
+    <div class="social-network">
+        <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa fa-vk fa-2x"></i></a>
+    </div>
+        <div class="social-network m">
+        <a href="#"><i class="fa fa-home fa-2x"></i></a>
+        <a href="#"><i class="fa fa-android fa-2x"></i></a>
+        <a href="#"><i class="fa fa-phone fa-2x"></i></a>
+        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+        </div>
+    <div class="social-network h">
+        <a href="#"><i class="fa fa-bug fa-2x"></i></a>
+        <a href="#"><i class="fa fa-ban fa-2x"></i></a>
+        <a href="#"><i class="fa fa-fire fa-2x"></i></a>
+        <a href="#"><i class="fa fa-search fa-2x"></i></a>
+    </div>
+    <div class="social-network m">
+        <a href="#"><i class="fa fa-save fa-2x"></i></a>
+        <a href="#"><i class="fa fa-desktop fa-2x"></i></a>
+        <a href="#"><i class="fa fa-comments-o fa-2x"></i></a>
+        <a href="#"><i class="fa fa-angle-double-up fa-2x"></i></a>
+    </div>
+    <a class="top" href="#"  title="На вверх"><button class="btn-top" title="Go to Top">Наверх</button></a>
+</body>
+</html>

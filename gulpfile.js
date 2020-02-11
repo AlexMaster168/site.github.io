@@ -3,7 +3,6 @@ const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 const cleanCSS = require('gulp-clean-css');
-const htmlmin = require('gulp-htmlmin');
 const browserSync = require('browser-sync').create();
 
 //Порядок подключения css файлов
@@ -35,7 +34,6 @@ function styles() {
             cascade: false
         }))
         //Минификация CSS
-        //Минификация CSS
         .pipe(cleanCSS({compatibility: 'ie8'})
         )
         //Выходная папка для стилей
@@ -56,9 +54,6 @@ function scripts() {
 }
 function html() {
     return gulp.src(htmlFiles)
-        // Минификация Html
-        .pipe(htmlmin({ collapseWhitespace: true }))
-
         //Выходная папка для скриптов
         .pipe(gulp.dest('.'))
 }
@@ -74,9 +69,9 @@ function watch(){
         }
     });
     //Следить за CSS файлами
-    gulp.watch('./Css/css/**/*.css', styles)
+    gulp.watch('./css/css/**/*.css', styles)
     //Следить за JS файлами
-    gulp.watch('./Js/js/**/*.js', scripts)
+    gulp.watch('./js/js/**/*.js', scripts)
     //При изменении HTML запустить синхронизацию
     gulp.watch("./*.html").on('change', browserSync.reload);
 }

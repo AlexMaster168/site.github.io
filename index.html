@@ -1,4 +1,24 @@
-﻿<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Первый сайт</title><link rel="stylesheet" href="css/style.css"><script src="https://code.jquery.com/jquery-3.1.1.js"></script><script src="js/js.js"></script><link rel="icon" href="https://image.flaticon.com/icons/png/128/69/69524.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"><script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script><script>$(function () {
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> Первый сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="js/js.js"></script>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/128/69/69524.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="fancyBox/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="fancyBox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="carousel/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script>
+    <script src="carousel/owl.carousel.min.js"></script>
+    <script>
+        $(function () {
             $(".menu").click(function () {
                 $('#max').slideToggle(500);
             });
@@ -9,4 +29,302 @@
             } else {
                 $('.btn-top').fadeOut();
             }
-        });</script><meta name="viewport" content="width=device-width"></head><body><header><div class="logo" onclick="slowScroll('#image')"><span>Мой первый сайт</span></div><div id="about"><a href="#" title="Калькулятор" onclick="slowScroll('#calculator')">Калькулятор</a> <a href="#" title="Калькулятор2" onclick="slowScroll('#calculator2')">Калькулятор2</a> <a href="#" title="Калькулятор3" onclick="slowScroll('#xs')">Калькулятор3</a> <a href="#" title="Часы" onclick="slowScroll('#clock')">Часы</a> <a href="#" id="but" title="Кнопки с действиями" onclick="slowScroll('#xz')">Кнопки с действиями</a></div><div class="aq"><button class="menu">Главное меню &#9776;</button><div id="max"><ul><li><a href="music.html">Музыка<button><img alt="Музыка" src="https://img.icons8.com/bubbles/2x/music.png"></button></a></li><li><a href="video.html">Видео<button><img alt="Видео" src="https://img.icons8.com/ios-filled/2x/video.png"></button></a></li><li><a href="image.html">Изображение<button><img alt="Изображение" src="https://img.icons8.com/color/2x/image.png"></button></a></li><li><a href="animation.html">Анимация<button><img alt="Анимация" src="https://cdn6.aptoide.com/imgs/8/a/7/8a73177e83e9561d14221e4fcdb4cc4d_icon.png?w=240"></button></a></li></ul></div></div></header><div id="image"><img src="https://abfx.com.ua/wp-content/uploads/2019/01/6.jpg" alt="Программирование" id="myImg2" onclick="image_2()"><div id="myModal2" class="modal-class"><span class="close-img" onclick="modal_i_2()">&times;</span> <img alt="Модальное изображение" class="modal-content-img" id="img02"><div id="caption2"></div></div></div><div id="calculator"><!-- CALCULATOR --><div class="calculator"><!-- CALCULATOR FORM --><form class="calculator__form"><!-- CALCULATOR ROW --><div class="calculator__row"><input class="calculator__display" id="display" type="text" disabled="disabled"></div><!-- CALCULATOR ROW --><div class="calculator__row"><button type="button" value="c" class="calculator__key calculator__clear"></button> <button type="button" value="<--" class="calculator__key calculator__backspace"></button> <button type="button" value="^3" class="calculator__key calculator__power"></button> <button type="button" value="+" class="calculator__key calculator__button"></button></div><!-- CALCULATOR ROW --><div class="calculator__row"><button type="button" value="9" class="calculator__key calculator__button"></button> <button type="button" value="8" class="calculator__key calculator__button"></button> <button type="button" value="7" class="calculator__key calculator__button"></button> <button type="button" value="-" class="calculator__key calculator__button"></button></div><!-- CALCULATOR ROW --><div class="calculator__row"><button type="button" value="6" class="calculator__key calculator__button"></button> <button type="button" value="5" class="calculator__key calculator__button"></button> <button type="button" value="4" class="calculator__key calculator__button"></button> <button type="button" value="*" class="calculator__key calculator__button"></button></div><!-- CALCULATOR ROW --><div class="calculator__row"><button type="button" value="3" class="calculator__key calculator__button"></button> <button type="button" value="2" class="calculator__key calculator__button"></button> <button type="button" value="1" class="calculator__key calculator__button"></button> <button type="button" value="/" class="calculator__key calculator__button"></button></div><!-- CALCULATOR ROW --><div class="calculator__row"><button type="button" value="0" class="calculator__key calculator__button"></button> <button type="button" value="^2" class="calculator__key calculatorg__button"></button> <button type="button" value="." class="calculator__key calculator__button"></button> <button type="button" value="=" class="calculator__key calculator__key--equal"></button></div><div class="calculator__row last"><button type="button" value="&#8730‎" class="calculator__key calculator__kor"></button> <button type="button" value="П‎" class="calculator__key calculator__n"></button> <button type="button" value="(" class="calculator__key calculator__button"></button> <button type="button" value=")" class="calculator__key calculator__button"></button></div></form></div></div><div id="calculator2"><div class="item input"><form name="form"><input type="text" name="textview" readonly="readonly"></form></div><div class="item clean" onclick="clean_res()">C</div><div class="item back" onclick="back()">&larr;</div><div class="item" onclick="insert('+')">&plus;</div><div class="item" onclick="insert('-')">&minus;</div><div class="item" onclick="insert('*')">&times;</div><div class="item" onclick="insert('/')">&divide;</div><div class="item" onclick="insert('7')">7</div><div class="item" onclick="insert('8')">8</div><div class="item" onclick="insert('9')">9</div><div class="item" onclick="insert('(')">(</div><div class="item" onclick="insert('4')">4</div><div class="item" onclick="insert('5')">5</div><div class="item" onclick="insert('6')">6</div><div class="item" onclick="insert(')')">)</div><div class="item" onclick="insert('1')">1</div><div class="item" onclick="insert('2')">2</div><div class="item" onclick="insert('3')">3</div><div class="item equal" onclick="res()">=</div><div class="item zero" onclick="insert('0')">0</div><div class="item" onclick="insert('.')">.</div></div><div id="clock"><span class="hour">hh</span> <span class="min">mm</span> <span class="sec">ss</span><br><span class="day">d</span> <span class="month">m</span> <span class="year">ye</span><br><input type="button" id="c" onclick="clockStart()" value="Старт"> <input type="button" id="cl" onclick="clockStop()" value="Стоп"></div><div class="slideshow-container"><div class="mySlides fade"><div class="numbertext">1 / 3</div><img class="img" alt="img1" src="Картинки/s.jpg" style="width:100%"><div class="text">Caption Text</div></div><div class="mySlides fade"><div class="numbertext">2 / 3</div><img class="img" alt="img2" src="Картинки/s2.jpg" style="width:100%"><div class="text">Caption Two</div></div><div class="mySlides fade"><div class="numbertext">3 / 3</div><img class="img" alt="img3" src="Картинки/s3.jpg" style="width:100%"><div class="text">Caption Three</div></div><a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a></div><br><div style="text-align:center"><span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span></div><div id="xs"><p>Калькулятор</p><p>Число 1: <input type="number" id="n1"></p><p>Число 2: <input type="number" id="n2"></p><button onclick="calc(1);">+</button> <button onclick="calc(2);">-</button> <button onclick="calc(3);">*</button> <button onclick="calc(4);">/</button> <button onclick="calc(5);">Очистить</button><hr><p id="out">Ответ</p><hr></div><label>Прогресс</label><progress max="100" value="90"></progress><div id="xz"><button onclick="fall()">Умножение</button> <button onclick="falla()">Деление</button> <button onclick="fallk()">Деление с остатком</button> <button onclick="falle()">Вычитание</button> <button onclick="fallx()">Сложение</button> <button onclick="full()">Корень</button> <button onclick="fullz()">Степень</button> <button onclick="fulls()">Округление</button> <button onclick="fullv()">Число Эйлера</button> <button onclick="fally()">Число ПІ</button> <button onclick="fallm()">Свое действие</button><br></div><input type="text" onkeyup="myfilter()" id="myInput" autocomplete="off" placeholder="Поиск по имени"><ol id="myUL"><li><a href="" class="header">A</a></li><li><a href="">Anton</a></li><li><a href="">Andrey</a></li><li><a href="">Andrew</a></li><li><a href="" class="header">B</a></li><li><a href="">Boris</a></li><li><a href="">Bogdan</a></li><li><a href="">Bill</a></li><li><a href="" class="header">C</a></li><li><a href="">Caterina</a></li><li><a href="">Creig</a></li><li><a href="">Cristina</a></li></ol><div id="convert" style="display: inline-block"><h1>Денежный конвертер</h1><p><label class="label__convert">$</label> <input type="number" id="inputdol" placeholder="$" oninput="money(this.value)" onchange="money(this.value)"></p><p>UAN: <span id="outputuan"></span></p></div><div class="popup"><button class="button__popup" onclick="myPoPup()">Нажми на подсказку</button> <span class="popupText" id="myPopup">Это подсказка для кнопки</span></div><button onclick="snackbar()">Snackbar</button><div id="Snackbar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta dolorem impedit minus quod ullam voluptates. Animi cupiditate obcaecati sapiente.</div><div class="tab"><button class="tablinks" onclick="openTab(event, 'tabs')">Вкладка 1</button> <button class="tablinks" onclick="openTab(event, 'tab2')">Вкладка 2</button> <button class="tablinks" onclick="openTab(event, 'tab3')">Вкладка 3</button> <button class="tablinks" onclick="openTab(event, 'tab4')">Вкладка 4</button></div><div id="tabs" class="tabcontent"><h3>Вкладка-1</h3><p>Это первая вкладка</p></div><div id="tab2" class="tabcontent"><h3>Вкладка-2</h3><p>Это вторая вкладка</p></div><div id="tab3" class="tabcontent"><h3>Вкладка-3</h3><p>Это третья вкладка</p></div><div id="tab4" class="tabcontent"><h3>Вкладка-4</h3><p>Это четвертая вкладка</p></div><div id="myProgress"><h2>Процесс загрузки</h2><div id="myBar"><div id="label">10%</div></div><button class="button_click" onclick="progress_move()">Нажать</button></div><details><summary>Список функционала на сайте</summary><ul><li>1 Выпадающее меню</li><li>2 Вкладки</li><li>3 Модальные изображения</li><li>4 Фильтрация на сайте</li><li>5 Карусель</li><li>6 Snackbar</li><li>7 Popup</li><li>8 ProgressBar</li></ul></details><footer>Веб сайт создал Алексей Сильвейструк &copy;</footer><hr><a class="top" href="#" title="На вверх" onclick="slowScroll('#about')"><button class="btn-top" title="Go to Top">Наверх</button></a></body></html>
+        });
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items:2,
+                loop:true,
+                nav:true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: false,
+                        dots:true
+                    },
+                    800: {
+                        items: 2,
+                        nav: false,
+                        dots:true
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        dots:true
+                    }
+                }
+            });
+        });
+        $(function () {
+         $("#accordion").accordion();
+        })
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+<body>
+<header>
+    <div class="logo" onclick="slowScroll('#image')">
+        <span>Мой первый сайт</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Калькулятор" onclick="slowScroll('#calculator')">Калькулятор</a>
+        <a href="#" title="Калькулятор2" onclick="slowScroll('#calculator2')">Калькулятор2</a>
+        <a href="#" title="Калькулятор3" onclick="slowScroll('#xs')">Калькулятор3</a>
+        <a href="#" title="Часы" onclick="slowScroll('#clock')">Часы</a>
+        <a href="#" id='but' title="Кнопки с действиями" onclick="slowScroll('#xz')">Кнопки с действиями</a>
+    </div>
+    <div class="aq">
+        <button class="menu">Главное меню &#9776;</button>
+ <div id="max">
+<ul>
+    <li><a href="music.html">Музыка<button><img alt="Музыка" src="https://img.icons8.com/bubbles/2x/music.png"></button></a></li>
+    <li><a href="video.html">Видео<button><img alt="Видео" src="https://img.icons8.com/ios-filled/2x/video.png"></button></a></li>
+    <li><a href="image.html">Изображение<button><img alt="Изображение" src="https://img.icons8.com/color/2x/image.png"></button></a></li>
+    <li><a href="animation.html">Анимация<button><img alt="Анимация" src="https://cdn6.aptoide.com/imgs/8/a/7/8a73177e83e9561d14221e4fcdb4cc4d_icon.png?w=240"></button></a></li>
+</ul>
+    </div>
+        </div>
+    </header>
+<div id="image">
+    <img src="https://abfx.com.ua/wp-content/uploads/2019/01/6.jpg" alt="Программирование" id="myImg2" onclick="image_2()">
+    <div id="myModal2" class="modal-class">
+        <span class="close-img" onclick="modal_i_2()">&times;</span>
+        <img alt="Модальное изображение" class="modal-content-img" id="img02">
+        <div id="caption2"></div>
+    </div>
+</div>
+<div id="calculator">
+    <!-- CALCULATOR -->
+    <div class="calculator">
+        <!-- CALCULATOR FORM -->
+        <form class="calculator__form">
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+                <input class="calculator__display" id="display" type="text" disabled />
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+                <button type="button" value="c" class="calculator__key calculator__clear"></button>
+                <button type="button" value="<--" class="calculator__key calculator__backspace"></button>
+                <button type="button" value="^3" class="calculator__key calculator__power"></button>
+                <button type="button" value="+" class="calculator__key calculator__button"></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+                <button type="button" value="9" class="calculator__key calculator__button"></button>
+                <button type="button" value="8" class="calculator__key calculator__button"></button>
+                <button type="button" value="7" class="calculator__key calculator__button"></button>
+                <button type="button" value="-" class="calculator__key calculator__button"></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+                <button type="button" value="6" class="calculator__key calculator__button"></button>
+                <button type="button" value="5" class="calculator__key calculator__button"></button>
+                <button type="button" value="4" class="calculator__key calculator__button"></button>
+                <button type="button" value="*" class="calculator__key calculator__button"></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+                <button type="button" value="3" class="calculator__key calculator__button"></button>
+                <button type="button" value="2" class="calculator__key calculator__button"></button>
+                <button type="button" value="1" class="calculator__key calculator__button"></button>
+                <button type="button" value="/" class="calculator__key calculator__button"></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+                <button type="button" value="0" class="calculator__key calculator__button"></button>
+                <button type="button" value="^2" class="calculator__key calculatorg__button"></button>
+                <button type="button" value="." class="calculator__key calculator__button"></button>
+                <button type="button" value="=" class="calculator__key calculator__key--equal"></button>
+            </div>
+            <div class="calculator__row last">
+                <button type="button" value="&#8730‎" class="calculator__key calculator__kor"></button>
+                <button type="button" value="П‎" class="calculator__key calculator__n"></button>
+                <button type="button" value="(" class="calculator__key calculator__button"></button>
+                <button type="button" value=")" class="calculator__key calculator__button"></button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="calculator2">
+    <div class="item input">
+        <form name="form"><input type="text" name="textview" readonly></form></div>
+    <div class="item clean" onclick="clean_res()">C</div>
+    <div class="item back" onclick="back()">&larr;</div>
+    <div class="item" onclick="insert('+')">&plus;</div>
+    <div class="item" onclick="insert('-')">&minus;</div>
+    <div class="item" onclick="insert('*')">&times;</div>
+    <div class="item" onclick="insert('/')">&divide;</div>
+    <div class="item" onclick="insert('7')">7</div>
+    <div class="item" onclick="insert('8')">8</div>
+    <div class="item" onclick="insert('9')">9</div>
+    <div class="item" onclick="insert('(')">(</div>
+    <div class="item" onclick="insert('4')">4</div>
+    <div class="item" onclick="insert('5')">5</div>
+    <div class="item" onclick="insert('6')">6</div>
+    <div class="item" onclick="insert(')')">)</div>
+    <div class="item" onclick="insert('1')">1</div>
+    <div class="item" onclick="insert('2')">2</div>
+    <div class="item" onclick="insert('3')">3</div>
+    <div class="item equal" onclick="res()">=</div>
+    <div class="item zero" onclick="insert('0')">0</div>
+    <div class="item" onclick="insert('.')">.</div>
+</div>
+<div id="clock">
+    <span class="hour">hh</span>
+    <span class="min">mm</span>
+    <span class="sec">ss</span><br>
+    <span class="day">d</span>
+    <span class="month">m</span>
+    <span class="year">ye</span><br>
+    <input type="button" id="c" onclick="clockStart()" value="Старт">
+    <input type="button" id="cl" onclick="clockStop()" value="Стоп">
+</div>
+<h2 id="modal-img-title">Модальные изображения</h2>
+<div class="modal_image">
+<a data-fancybox="gallery" data-caption="Картинка" href="Картинки/s.jpg" width="600" height="600">
+    <img src="Картинки/s.jpg" width="300" height="300" alt="Картинка">
+</a>
+<a data-fancybox="gallery" data-caption="Картинка 2" href="Картинки/s2.jpg" width="600" height="600">
+    <img src="Картинки/s2.jpg" width="300" height="300" alt="Картинка2">
+</a>
+<a data-fancybox="gallery" data-caption="Картинка 3" href="Картинки/s3.jpg" width="600" height="600">
+    <img src="Картинки/s3.jpg" width="300" height="300" alt="Картинка3">
+</a>
+<a data-fancybox="gallery" data-caption="Картинка 4" href="Картинки/s4.jpg" width="600" height="600">
+    <img src="Картинки/s4.jpg" width="300" height="300" alt="Картинка4">
+</a>
+</div>
+<h2>Карусель</h2>
+<div class="owl-carousel owl-theme">
+    <div><img src="Картинки/s.jpg" alt="Картинка"></div>
+    <div><img src="Картинки/s2.jpg" alt="Картинка-2"></div>
+    <div><img src="Картинки/s3.jpg" alt="Картинка-3"></div>
+    <div><img src="Картинки/s4.jpg" alt="Картинка-4"></div>
+</div>
+<div id="xs">
+    <p>Калькулятор</p>
+    <p>Число 1: <input type="number" id="n1"></p>
+    <p>Число 2: <input type="number" id="n2"></p>
+    <button onclick="calc(1);">+</button>
+    <button onclick="calc(2);">-</button>
+    <button onclick="calc(3);">*</button>
+    <button onclick="calc(4);">/</button>
+    <button onclick="calc(5);">Очистить</button>
+    <hr>
+    <p id="out">Ответ</p>
+    <hr></div>
+<label>Прогресс</label><progress max="100" value="90"></progress>
+<div id="xz">
+    <button  onclick="fall()" >Умножение</button>
+    <button onclick="falla()">Деление</button>
+    <button onclick="fallk()">Деление с остатком</button>
+    <button onclick="falle()">Вычитание</button>
+    <button onclick="fallx()">Сложение</button>
+    <button onclick="full()" > Корень </button>
+    <button onclick="fullz()" > Степень </button>
+    <button onclick="fulls()" > Округление </button>
+    <button onclick="fullv()" > Число Эйлера</button>
+    <button onclick="fally()">Число ПІ</button>
+    <button onclick="fallm()">Свое действие</button><br>
+</div>
+<input type="text" onkeyup="myfilter()" id="myInput" autocomplete="off" placeholder="Поиск по имени">
+<ol id="myUL">
+    <li><a href="" class="header">A</a></li>
+    <li><a href="">Anton</a></li>
+    <li><a href="">Andrey</a></li>
+    <li><a href="">Andrew</a></li>
+
+    <li><a href="" class="header">B</a></li>
+    <li><a href="">Boris</a></li>
+    <li><a href="">Bogdan</a></li>
+    <li><a href="">Bill</a></li>
+
+    <li><a href="" class="header">C</a></li>
+    <li><a href="">Caterina</a></li>
+    <li><a href="">Creig</a></li>
+    <li><a href="">Cristina</a></li>
+</ol>
+<div id="convert" style="display: inline-block">
+    <h1>Денежный конвертер</h1>
+    <p>
+        <label class="label__convert">$</label>
+        <input type="number" id="inputdol" placeholder="$" oninput="money(this.value)" onchange="money(this.value)">
+    </p>
+    <p>UAN:
+        <span id="outputuan"></span></p>
+</div>
+<div class="popup">
+    <button class="button__popup" onclick="myPoPup()">Нажми на подсказку</button>
+    <span class="popupText" id="myPopup">Это подсказка для кнопки</span>
+</div>
+<button onclick="snackbar()">Snackbar</button>
+<div id="Snackbar">
+    Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Amet dicta dolorem impedit
+    minus quod ullam voluptates. Animi cupiditate obcaecati sapiente.
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'tabs')">Вкладка 1 </button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')">Вкладка 2</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')">Вкладка 3</button>
+    <button class="tablinks" onclick="openTab(event, 'tab4')">Вкладка 4</button>
+</div>
+
+<div id="tabs" class="tabcontent">
+    <h3>Вкладка-1</h3>
+    <p>Это первая вкладка</p>
+</div>
+
+<div id="tab2" class="tabcontent">
+    <h3>Вкладка-2</h3>
+    <p>Это вторая вкладка</p>
+</div>
+
+<div id="tab3" class="tabcontent">
+    <h3>Вкладка-3</h3>
+    <p>Это третья вкладка</p>
+</div>
+<div id="tab4" class="tabcontent">
+    <h3>Вкладка-4</h3>
+    <p>Это четвертая вкладка</p>
+</div>
+<div id="myProgress">
+    <h2>Процесс загрузки</h2>
+    <div id="myBar">
+        <div id="label">10%</div>
+    </div>
+    <button class="button_click" onclick="progress_move()">Нажать</button>
+</div>
+<h3>Мой скилл</h3>
+<div id="accordion">
+    <h3>Html</h3>
+    <div>Язык разметки гипертекста</div>
+    <h3>СSS</h3>
+    <div>Каскадная таблица стилей</div>
+    <h3>JS</h3>
+    <div>Язык программирования</div>
+    <h3>JQuery</h3>
+    <div>Библиотека Js</div>
+    <h3>TypeScript</h3>
+    <div>Типизация Js</div>
+</div>
+<details>
+    <summary>Список функционала на сайте</summary>
+    <ul>
+        <li>1 Выпадающее меню</li>
+        <li>2 Вкладки</li>
+        <li>3 Модальные изображения</li>
+        <li>4 Фильтрация на сайте</li>
+        <li>5 Карусель</li>
+        <li>6 Snackbar</li>
+        <li>7 Popup</li>
+        <li>8 ProgressBar</li>
+        <li>9 Accordion</li>
+    </ul>
+</details>
+<footer>Веб сайт создал Алексей Сильвейструк &copy;</footer>
+<hr>
+<a class="top" href="#"  title="На вверх"  onclick="slowScroll('#about')"><button class="btn-top" title="Go to Top">Наверх</button></a>
+</body>
+</html>
+
