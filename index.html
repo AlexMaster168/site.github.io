@@ -55,7 +55,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
-<body>
+<body onload="clicker_g()">
 <header>
     <div class="logo" onclick="slowScroll('#image')">
         <span>Мой первый сайт</span>
@@ -289,6 +289,11 @@
         <div id="label">10%</div>
     </div>
     <button class="button_click" onclick="progress_move()">Нажать</button>
+</div>
+<div>
+    <h2>Нравится ли вам сайт</h2>
+<button onclick="clicker('1')"><img src="Картинки/like.png" alt="put-on-like"></button><input id="like" type="text" value="1">
+<button onclick="clicker('2')"><img src="Картинки/dislike.png" alt="put-on-dislike"></button><input id="dislike" type="text" value="1">
 </div>
 <details>
     <summary>Список функционала на сайте</summary>
