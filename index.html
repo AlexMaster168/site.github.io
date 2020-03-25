@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Первый сайт</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/js.js"></script>
     <link rel="icon" href="https://image.flaticon.com/icons/png/128/69/69524.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -53,6 +53,10 @@
                 }
             });
         });
+$('#lds-dual-ring').show();
+            setTimeout(function() {
+                $('#lds-dual-ring').hide()
+            }, 3000);
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
@@ -77,7 +81,7 @@
                 </svg>
             </div>
         </label>
-        <button class="menu">Главное меню &#9776;</button>
+        <button class="menu">Главное меню &#9776;</button><div id="lds-dual-ring"></div>
  <div id="max">
 <ul>
     <li><a href="music.html">Музыка<button><img alt="Музыка" src="https://img.icons8.com/bubbles/2x/music.png"></button></a></li>
