@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Первый сайт</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title> Первый сайт</title>
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="js/js.min.js"></script>
+    <script src="js/js2.min.js"></script>
     <link rel="icon" href="https://image.flaticon.com/icons/png/128/69/69524.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="fancyBox/jquery.fancybox.min.js"></script>
@@ -16,48 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script>
     <script src="carousel/owl.carousel.min.js"></script>
-    <script>
-        $(function () {
-            $(".menu").click(function () {
-                $('#max').slideToggle(500);
-            });
-        });
-        $(window).scroll(function() {
-            if ($(this).scrollTop()) {
-                $('.btn-top').fadeIn();
-            } else {
-                $('.btn-top').fadeOut();
-            }
-        });
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                items:2,
-                loop:true,
-                nav:true,
-                responsive: {
-                    0: {
-                        items: 2,
-                        nav: false,
-                        dots:true
-                    },
-                    800: {
-                        items: 2,
-                        nav: false,
-                        dots:true
-                    },
-                    1000: {
-                        items: 2,
-                        nav: false,
-                        dots:true
-                    }
-                }
-            });
-        });
-$('#lds-dual-ring').show();
-            setTimeout(function() {
-                $('#lds-dual-ring').hide()
-            }, 3000);
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
 <body>
@@ -73,7 +32,7 @@ $('#lds-dual-ring').show();
         <a href="#" id='but' title="Кнопки с действиями" onclick="slowScroll('#xz')">Кнопки с действиями</a>
     </div>
     <div class="aq">
-        <label class="power" >
+           <label class="power" >
             <input type="checkbox" onclick="theme()">
             <div>
                 <svg viewBox="0 0 44 44">
@@ -304,9 +263,24 @@ $('#lds-dual-ring').show();
     <button class="button_click" onclick="progress_move()">Нажать</button>
 </div>
 <div>
+    <h2>Аккордион</h2>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
     <h2>Нравится ли вам сайт</h2>
-<button onclick="clicker('1')"><img src="Картинки/like.png" alt="put-on-like"></button><input id="like" type="text" value="1">
-<button onclick="clicker('2')"><img src="Картинки/dislike.png" alt="put-on-dislike"></button><input id="dislike" type="text" value="1">
+<button onclick="clicker('1')"><img src="Картинки/like.png" alt="like"></button><input id="like" type="text" value="1">
+<button onclick="clicker('2')"><img src="Картинки/dislike.png" alt="dislike"></button><input id="dislike" type="text" value="1">
 </div>
 <details>
     <summary>Список функционала на сайте</summary>
@@ -319,6 +293,7 @@ $('#lds-dual-ring').show();
         <li>6 Snackbar</li>
         <li>7 Popup</li>
         <li>8 ProgressBar</li>
+        <li>9 Аккордион</li>
     </ul>
 </details>
 <footer>Веб сайт создал Алексей Сильвейструк &copy;</footer>
