@@ -20,6 +20,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
 <body>
+<script>
+    $(function () {
+        $(".menu").click(function () {
+            $('#max').slideToggle(500);
+        });
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('.btn-top').fadeIn();
+        } else {
+            $('.btn-top').fadeOut();
+        }
+    });
+    $('#lds-dual-ring').show();
+    setTimeout(function () {
+        $('#lds-dual-ring').hide()
+    }, 3000);
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:2,
+            loop:true,
+            nav:true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false,
+                    dots:true
+                },
+                800: {
+                    items: 2,
+                    nav: false,
+                    dots:true
+                },
+                1000: {
+                    items: 2,
+                    nav: false,
+                    dots:true
+                }
+            }
+        });
+    });
+</script>
 <header>
     <div class="logo" onclick="slowScroll('#image')">
         <span>Мой первый сайт</span>
@@ -47,6 +89,7 @@
     <li><a href="video.html">Видео<button><img alt="Видео" src="https://img.icons8.com/ios-filled/2x/video.png"></button></a></li>
     <li><a href="image.html">Изображение<button><img alt="Изображение" src="https://img.icons8.com/color/2x/image.png"></button></a></li>
     <li><a href="animation.html">Анимация<button><img alt="Анимация" src="https://cdn6.aptoide.com/imgs/8/a/7/8a73177e83e9561d14221e4fcdb4cc4d_icon.png?w=240"></button></a></li>
+    <li><a href="downl.html"><button>Скачать моды на игры</button></a></li>
 </ul>
     </div>
         </div>
