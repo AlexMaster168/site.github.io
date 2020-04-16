@@ -17,6 +17,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script>
     <script src="carousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
 <body>
@@ -61,6 +63,9 @@
             }
         });
     });
+    $(document).ready(function(){
+        $(".num").counterUp({delay:10,time:3000});
+    });
 </script>
 <header>
     <div class="logo" onclick="slowScroll('#image')">
@@ -99,6 +104,35 @@
         <span class="close-img" onclick="modal_i_2()">&times;</span>
         <img alt="Модальное изображение" class="modal-content-img" id="img02">
         <div id="caption2"></div>
+    </div>
+</div>
+<div class="middle">
+    <div class="counting-sec">
+        <div class="inner-width">
+            <div class="col">
+                <i class="fa fa-users"></i>
+                <div class="num">7246</div>
+                Пользователи
+            </div>
+
+            <div class="col">
+                <i class="fa fa-briefcase"></i>
+                <div class="num">67</div>
+                Услуги
+            </div>
+
+            <div class="col">
+                <i class="fa fa-money"></i>
+                <div class="num">9999</div>
+                Деньги
+            </div>
+
+            <div class="col">
+                <i class="fa fa-thumbs-up"></i>
+                <div class="num">2078</div>
+                Довольные клиенты
+            </div>
+        </div>
     </div>
 </div>
 <div id="calculator">
@@ -321,7 +355,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <h2>Нравится ли вам сайт</h2>
-<button onclick="clicker('1')"><img src="Картинки/like.png" alt="like"></button><input id="like" type="text" value="1">
+<button onclick="clicker('1')"><img src="Картинки/like.png" alt="likes"></button><input id="like" type="text" value="1">
 <button onclick="clicker('2')"><img src="Картинки/dislike.png" alt="dislike"></button><input id="dislike" type="text" value="1">
 </div>
 <details>
@@ -335,7 +369,8 @@
         <li>6 Snackbar</li>
         <li>7 Popup</li>
         <li>8 ProgressBar</li>
-        <li>9 Аккордеон</li>
+        <li>9 Аккордион</li>
+        <li>10 Счетчик</li>
     </ul>
 </details>
 <footer>Веб сайт создал Алексей Сильвейструк &copy;</footer>
