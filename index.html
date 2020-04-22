@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="fancyBox/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="fancyBox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="hover-min.css">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script>
-    <script src="carousel/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+    <script src="swiper/js/swiper-config.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
 <body>
@@ -39,30 +39,6 @@
     setTimeout(function () {
         $('#lds-dual-ring').hide()
     }, 3000);
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            items:2,
-            loop:true,
-            nav:true,
-            responsive: {
-                0: {
-                    items: 2,
-                    nav: false,
-                    dots:true
-                },
-                800: {
-                    items: 2,
-                    nav: false,
-                    dots:true
-                },
-                1000: {
-                    items: 2,
-                    nav: false,
-                    dots:true
-                }
-            }
-        });
-    });
     $(document).ready(function(){
         $(".num").counterUp({delay:10,time:3000});
     });
@@ -236,11 +212,16 @@
 </a>
 </div>
 <h2>Карусель</h2>
-<div class="owl-carousel owl-theme">
-    <div><img src="Картинки/s.jpg" alt="Картинка"></div>
-    <div><img src="Картинки/s2.jpg" alt="Картинка-2"></div>
-    <div><img src="Картинки/s3.jpg" alt="Картинка-3"></div>
-    <div><img src="Картинки/s4.jpg" alt="Картинка-4"></div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Картинки/s.jpg" alt="s.jpg"></div>
+        <div class="swiper-slide"><img src="Картинки/s2.jpg" alt="s2.jpg"></div>
+        <div class="swiper-slide"><img src="Картинки/s3.jpg" alt="s3.jpg"></div>
+        <div class="swiper-slide"><img src="Картинки/s4.jpg" alt="s4.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </div>
 <div id="xs">
     <p>Калькулятор</p>
